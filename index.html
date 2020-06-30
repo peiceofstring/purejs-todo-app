@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>To Do APP</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css
+"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div id="header" class="bgDarkBlue">
+      <h1 class="title textGreen">
+        <i class="fa fa-size-2 fa-list"> </i> Todo List
+      </h1>
+      <p id="noText">CLICK the text box and TYPE to add new Item :) ...</p>
+      <div class="flexContainer">
+        <input
+          id="textInput"
+          class="flexGrow10"
+          type="text"
+          placeholder="New Item..."
+        />
+        <button
+          onclick="addButton()"
+          id="addButton"
+          class="flexGrow1"
+          type="button"
+          name="button"
+        >
+          ADD
+        </button>
+      </div>
+      <a onclick="clearAll()" id="clearButton">
+        <p>Clear <i class="fa fa-times-circle"></i></p>
+      </a>
+    </div>
+    <div id="listMainContainer" class="">
+      <ul id="listContainer" class=""></ul>
+      <p id="noList">No List Items ):</p>
+    </div>
+  </body>
+</html>
