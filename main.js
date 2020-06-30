@@ -167,8 +167,8 @@ function removeClearPulse() {
 
 // No List | Animation
 function noListAnimation() {
-  addNoListAni();
-  setTimeout(removeNoListAni, 1000);
+  setTimeout(addNoListAni, 1000);
+  setTimeout(removeNoListAni, 2000);
 }
 
 function addNoListAni() {
